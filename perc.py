@@ -9,4 +9,5 @@ fp = ((f/t) * 100)
 
 
 print("The total number of students:\t", t)
+print ("The number of males and females:\t", m, "\t", f, "\t" )
 print("The percentage of males and females:\t", (format ((mp/100), '.2%')), "\t", (format ((fp/100), '.2%')))
