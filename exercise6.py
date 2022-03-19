@@ -7,7 +7,7 @@ print (n1, n2, n3)
 #n2 = 1
 #n3 = 1
 if n1 == n2 == n3:
-    print ("JACKPOT! all values are the same")
+    print ("JACKPOT! all values are the same ")
 elif n1 <= n2 and n1 <= n3:
     print ("smallest value is", n1)
 elif n2 <= n1 and n2 <= n3:
