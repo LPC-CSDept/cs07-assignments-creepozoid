@@ -19,3 +19,11 @@ for i in range(worksheet.ncols):
     else:
         continue
 print ("header =", header)
+
+
+
+for i in range(1, worksheet.nrows):
+    id.append(worksheet.col_values(0)[i])
+print ("id =", id)
+
+
