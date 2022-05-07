@@ -3,6 +3,7 @@ import xlrd
 xls = 'student.xls'
 work_book = xlrd.open_workbook(xls)
 worksheet = work_book.sheet_by_index(0)
+#print (xls)
 header = []
 id = []
 names = []
@@ -26,9 +27,9 @@ for i in range(1, worksheet.ncols):
         ind_score.append(worksheet.row_values(i)[j])
     scores.append(ind_score)
 
-finalarr = []
-for i in range(len(names)):
-  ziparr = [id[i], names[i], scores[i]]
-  finalarr.append(dict(zip(header, ziparr)))
+dict01 = []
+for i in range(len(id)):
+    ind_string = (id[i], names[i], scores[i])
+    dict01.append(dict(zip(header, ind_string)))
 
-print (finalarr)
+print (dict01)
