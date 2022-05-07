@@ -22,16 +22,16 @@ print ("header =", header)
 
 for i in range(1, worksheet.nrows):
     id.append(int(worksheet.col_values(0)[i]))
-print ("id =", id)
+print ("id =\t", id)
 
 for i in range(1, worksheet.nrows):
     names.append(worksheet.col_values(1)[i])
-print ("name =", names)
+print ("name =\t", names)
 
 for i in range(1, worksheet.ncols):
     ind_score = []
     for j in range(2, worksheet.nrows):
         ind_score.append(worksheet.row_values(i)[j])
     scores.append(ind_score)
-print (scores)
+print ("scores =", scores)
 
