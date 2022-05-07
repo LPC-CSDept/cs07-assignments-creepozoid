@@ -20,10 +20,12 @@ for i in range(worksheet.ncols):
         continue
 print ("header =", header)
 
-
-
 for i in range(1, worksheet.nrows):
     id.append(worksheet.col_values(0)[i])
 print ("id =", id)
+
+for i in range(1, worksheet.nrows):
+    names.append(worksheet.col_values(1)[i])
+print ("name =", names)
 
 
