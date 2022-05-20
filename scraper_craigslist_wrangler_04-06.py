@@ -1,10 +1,10 @@
 # This scraper get from craigslist listing of all 2004 -2006 jeep wranglers 
-# that are for sale in SF Bay Area and create a dictionary 
+# with 6 cylinders engine that are for sale in SF Bay Area and create a dictionary 
 # where key is title of an ad and value is the price of the corresponding vehicle
 
 import requests
 from bs4 import BeautifulSoup as soup
-page = requests.get("https://sfbay.craigslist.org/search/cta?purveyor=owner&auto_make_model=jeep+wrangler&min_auto_year=2004&max_auto_year=2006")
+page = requests.get("https://sfbay.craigslist.org/search/cta?purveyor=owner&auto_make_model=jeep+wrangler&min_auto_year=2004&max_auto_year=2006&auto_cylinders=4")
 bsobj = soup(page.content,'lxml')
 links = []
 for link in bsobj.findAll('li',{'class':'result-row'}):
