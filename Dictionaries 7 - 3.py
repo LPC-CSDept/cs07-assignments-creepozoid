@@ -36,4 +36,5 @@ for i in range(len(id)):
 a = list(filter(lambda i: sum(i['Scores']) > 280, dict01))
 print(*a)
 
-#
+#list unwrap object that is created by filtering values associated with key "Scores" the sum of which is greater that 280
+

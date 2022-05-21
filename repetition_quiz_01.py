@@ -5,12 +5,15 @@
 #output : 2 4
 
 import random
-number1 = random.randint(1, 100)
+number1 = random.randint(1, 1000)
 print (number1)
+i = 0
 while True:
-    number2 = random.randint(1, 100)
+    i = i + 1
+    number2 = random.randint(1, 1000)
     print (number2)
     if number1 % 2 == 0 and number2 == (number1 + 2):
         break
     number1 = number2
 print(number1, "and", number2, "are consequtive even numbers, generation has stopped")
+print("It took", i, "iterations to find the pair")

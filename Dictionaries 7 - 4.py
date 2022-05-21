@@ -34,11 +34,7 @@ for i in range(len(id)):
     ind_string = (id[i], names[i], scores[i])
     dict01.append(dict(zip(header, ind_string)))
 
-
-
-
-
-
-
 for i in range(len(id)):
     print(dict01[i]['ID'], dict01[i]['Name'], reduce(lambda x, y: x + y, dict01[i]['Scores']))
+
+#reduce function takes two arguments - lambda function and sequence of values associated with scores keys and summarize them

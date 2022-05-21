@@ -6,6 +6,15 @@
 #Input : program python java c++ stop
 #output: 2
 
+#b = 0
+#while True:
+#    a = input("Enter word:")
+#    if 'p' in str(a):
+#        b = b + 1
+#    if str(a) == "stop":
+#       print (b)
+#       break
+
 b = 0
 while True:
     char_list = []
