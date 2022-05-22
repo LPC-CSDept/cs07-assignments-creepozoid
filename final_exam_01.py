@@ -1,10 +1,10 @@
 camale = []
 cafemale = []
-camalemum = []
+camalenum = []
 cafemalenum = []
 flmale = []
 flfemale = []
-flmalemum = []
+flmalenum = []
 flfemalenum = []
 
 ct = list(open("ca2021.txt", "r", newline = None))
@@ -15,13 +15,13 @@ for i in range(len(ct)):
     y = (ct[i].split())
     camale.append(y[1])
     cafemale.append(y[3])
-    camalemum.append(y[2])
+    camalenum.append(y[2])
     cafemalenum.append(y[4])
 print(camale)
 print()
 print(cafemale)
 print()
-print(camalemum)
+print(camalenum)
 print()
 print(cafemalenum)
 print()
@@ -31,12 +31,17 @@ for i in range(len(ft)):
     y = (ft[i].split())
     flmale.append(y[1])
     flfemale.append(y[3])
-    flmalemum.append(y[2])
+    flmalenum.append(y[2])
     flfemalenum.append(y[4])
 print(flmale)
 print()
 print(flfemale)
 print()
-print(flmalemum)
+print(flmalenum)
 print()
 print(flfemalenum)
+
+dict_ca_male = dict(zip(camale, camalenum))
+dict_ca_female = dict(zip(cafemale, cafemalenum))
+dict_fl_male = dict(zip(flmale, flmalenum))
+dict_fl_female = dict(zip(flfemale, flfemalenum))
